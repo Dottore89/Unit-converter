@@ -15,7 +15,8 @@ const literToGallon = 0.264
 const kilogramToPound = 2.204
 
 convertBtn.addEventListener("click", function() {
-    let baseValue = inputEl.value 
+    let baseValue = inputEl.value
+    inputEl.value = ""
     lengthVal.textContent = `
     ${baseValue} meter(s) = ${Number(baseValue * meterToFeet).toFixed(3)} feet | ${baseValue} feet = ${Number(baseValue / meterToFeet).toFixed(3)}
     `
